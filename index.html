@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Yatra+One&display=swap" rel="stylesheet">
+    <title>Em busca da cidade perdida</title>
+</head>
+<body>
+    <main>
+        <div><img src="R.png" alt=""></div>
+        <!-- Introdução -->
+        <div class="passo ativo" id="passo-0">
+            <p>Um dia, enquanto eu andava em uma biblioteca, encontrei um mapa com pistas que diziam levar a uma cidade perdida.
+                Intrigado com isso, resolvi seguir as pistas.</p>
+                
+            <button class="btn-prox" data-proximo="1">Espírito Santo</button>
+            <button class="btn-prox" data-proximo="2">Sergipe</button>
+        </div>
+
+        <!-- Espírito Santo -->
+        <div class="passo" id="passo-1">
+            <p>Você começa sua jornada no Espírito Santo e decide subir o morro do Moreno à procura da primeira pista.</p>
+            <button class="btn-prox" data-proximo="3">Procurar a pista no alto do morro</button>
+            <button class="btn-prox" data-proximo="4">Desistir e voltar para casa</button>
+        </div>
+
+        <!-- Sergipe -->
+        <div class="passo" id="passo-2">
+            <p>Você decide iniciar sua busca em Sergipe, explorando suas praias e montanhas para encontrar a cidade perdida.</p>
+            <button class="btn-prox" data-proximo="3">Continuar explorando Sergipe</button>
+            <button class="btn-prox" data-proximo="4">Voltar para o ponto de partida</button>
+        </div>
+
+        <!-- Encontrando a pista -->
+        <div class="passo" id="passo-3">
+            <p>Após uma longa caminhada, você encontra uma pista misteriosa! Ela fala de uma cidade escondida nas sombras de uma montanha, guardada por enigmas.</p>
+            <button class="btn-prox" data-proximo="5">Seguir para a cidade perdida</button>
+            <button class="btn-prox" data-proximo="4">Desistir e voltar para casa</button>
+        </div>
+
+        <!-- Desistindo -->
+        <div class="passo" id="passo-4">
+            <p>Você decidiu desistir da jornada. Talvez as aventuras não sejam para todos, e o mistério da cidade perdida continuará... para sempre!</p>
+            <button class="btn-prox" data-proximo="0">Recomeçar a jornada</button>
+        </div>
+
+        <!-- Seguindo para a cidade perdida -->
+        <div class="passo" id="passo-5">
+            <p>Você chega à entrada da cidade perdida, mas algo está errado... O ar está denso, e as sombras parecem ganhar vida. De repente, uma voz ecoa: "Somente os corajosos prosseguem!"</p>
+            <button class="btn-prox" data-proximo="6">Enfrentar os enigmas</button>
+            <button class="btn-prox" data-proximo="4">Fugir antes que seja tarde</button>
+        </div>
+
+        <!-- Enfrentando os enigmas -->
+        <div class="passo" id="passo-6">
+            <p>Você corajosamente avança e resolve os enigmas um a um. Quando chega ao centro da cidade, percebe que a lenda era real. Mas há um preço... A cidade começa a desmoronar, e não há saída!</p>
+            <p><strong>Fim trágico:</strong> Você se torna parte da lenda, um explorador perdido que nunca retornou.</p>
+            <button class="btn-prox" data-proximo="0">Recomeçar a jornada</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
